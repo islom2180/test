@@ -44,3 +44,4 @@ if natija!=None:
     for i in natija:
         print(i)
 
+print("shular")
