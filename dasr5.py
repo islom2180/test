@@ -11,7 +11,7 @@ class MySQL:
         self.db = pymysql.connect(
             host="localhost",
             user = 'root',
-            password="1234"
+            password="yusuf6451895"
         )
         self.c = self.db.cursor()
 
@@ -59,17 +59,9 @@ class MySQL:
 
     def First(self):
         pass
-        self.c.execute(f''' 
-                select * from teachers ORDER BY  salary desc; 
-                ''')
 
     def Second(self):
-        self.c.execute(f'''
-                       
-    select * from teachers  order by salary asc , experience desc;
-                       
-''')
-        
+        pass
 
     def Third(self, new_salary):
         pass
@@ -97,24 +89,3 @@ class MySQL:
 
     def Eleventh(self):
         pass
-
-
-
-
-
-
-
-
-m1 = MySQL()
-# for i in range(4):
-#      m1.InsertTeacher(input("NAME: "), input("Surname: "), int(input("Salary: ")), int(input("Exper: ")), input("Branch: "))
-
-
-# for i in range(7):
-#     m1.InsertStudent(input("NAME: "), input("Surname: "), int(input("Month: ")), int(input("Course: ")), input("Branch: "))
-
-m1.First()
-
-# m1.Seventh()
-# m1.Eighth()
-# m1.Nineth()
